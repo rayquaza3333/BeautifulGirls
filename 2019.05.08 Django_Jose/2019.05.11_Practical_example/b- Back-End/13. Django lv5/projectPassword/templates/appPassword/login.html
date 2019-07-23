@@ -1,0 +1,34 @@
+{% extends 'appPassword/base.html' %}
+
+{% block title_block %}
+
+  <title>Login</title>
+
+{% endblock %}
+
+
+{% block body_block %}
+
+  <div class="jumbotron">
+    <h1>PLease Login</h1>
+    <form class="" action="{% url 'appPassword:user_login' %}" method="post">   <!-- This Action = url here is to show us that
+                                                                                  The form will execute the action - redirect to pointed url
+                                                                                  in face, without this action. Submiting the form still redirect to the url's views
+                                                                                - which is user_login in this scenario -->
+      {% csrf_token %}
+
+      <label for="username">Usename:</label>
+      <input type="text" name="username" placeholder="Enter Username">
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="password">
+
+      <input type="submit" name="" value="Login">
+
+
+    </form>
+
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://tomato-timer.com/ -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>(14:35) TomatoTimer</title>
+<meta name="description" content="TomatoTimer is a flexible and easy to use online Pomodoro Technique Timer">
+<meta name="keywords" content="pomodoro technique, tomato timer, pomodoro timer, online pomodoro timer, software timer, pomodoro software timer, productivity tools, gtd, getting things done, productivity, digital timer, concentration techniques, pomodoro resources, pomodoro software">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="https://tomato-timer.com/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tomato-timer.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tomato-timer.com/favicon-16x16.png">
+<link rel="manifest" href="https://tomato-timer.com/manifest.json">
+<link rel="mask-icon" href="https://tomato-timer.com/safari-pinned-tab.svg" color="#ff4343">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="./clear()_files/foundation.css">
+<link rel="stylesheet" href="./clear()_files/app.css">
+<script type="text/javascript" async="" src="./clear()_files/ga.js.download"></script><script src="./clear()_files/foundation.min.js.download"></script>
+<script src="./clear()_files/howler2.min.js.download"></script>
+<script src="./clear()_files/moment-with-locales.min.js.download"></script>
+<script src="./clear()_files/jquery.min.js.download"></script>
+<script src="./clear()_files/HackTimer.js.download"></script>
+<script src="./clear()_files/HackTimerWorker.js.download"></script>
+<script id="_carbonads_projs" type="text/javascript" src="./clear()_files/CKYIC5QI.json"></script></head>
+<body style="zoom: 1;">
+<!-- Header and Nav -->
+<div class="panel">
+	<div class="row">
+    <div class="three columns">
+        <h2>TomatoTimer</h2></div>
+    <div class="nine columns">
+      <ul class="nav-bar right">
+        <li><a href="https://tomato-timer.com/#" data-reveal-id="trackerModal">Log</a></li>
+        <li><a href="https://tomato-timer.com/#" data-reveal-id="faqModal">FAQ</a></li>
+        <li><a href="https://tomato-timer.com/#" data-reveal-id="settingsModal">Settings</a></li>
+        <li><a href="https://bit.ly/sharetomatotimer" target="_blank">Tweet about us!</a></li>
+      </ul>
+    </div>
+  </div>
+<!---->
+</div>
+<!---->
+	<div class="row">
+    <div class="ten columns centered">
+    <ul class="button-group even three-up" id="timer_selection">
+        <li><button class="button active" id="pomodoro" type="submit" value="Pomodoro">Pomodoro</button></li>
+        <li><button class="button" id="short_break" type="submit" value="Short Break">Short Break</button></li>
+        <li><button class="button" id="long_break" type="submit" value="Long Break">Long Break</button></li>
+    </ul>
+</div>
+</div>
+<br>
+<!-- Header -->
+<div class="row">
+    <div class="twelve columns text-center">
+    <div id="default_container">
+  		<h1 id="timer_default">14:35</h1><br>
+	</div>
+</div>
+<!-- End Header -->
+<!-- End Header and Nav -->
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="six columns centered">
+
+    <div class="four columns">
+        <button class="success radius large button" id="timer_start" type="submit" value="Start">Start</button>
+    </div>
+    <div class="four columns">
+        <button class="alert radius large button" id="timer_pause" type="submit" value="Stop">Stop</button>
+    </div>
+    <div class="four columns">
+        <button class="radius large secondary button" id="timer_reset" type="submit" value="Reset">Reset</button>
+    </div>
+    </div>
+ </div>
+<br>
+<div class="row"><br></div>
+<div class="row">
+          <div class="row">
+              <div class="four columns">
+                <div class="panel">
+                  <h5>Keyboard Shortcuts</h5>
+                <ul class="disc">
+  <li><strong>SPACE  </strong>&nbsp;&nbsp;Start or Stop the timer</li>
+  <li><strong>ALT + P</strong>&nbsp;&nbsp;Pomodoro</li>
+  <li><strong>ALT + S</strong>&nbsp;&nbsp;Short Break</li>
+  <li><strong>ALT + L</strong>&nbsp;&nbsp;Long Break</li>
+  <li><strong>ALT + R</strong>&nbsp;&nbsp;Reset Timer</li>
+</ul>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="panel">
+                    <h5>Notifications</h5>
+                  <h6 class="subheader">You can change the audio tone and volume via Settings</h6>
+                  <h6 class="subheader">Desktop Notifications are currently supported in Chrome, Firefox and Safari </h6>
+                  <a href="https://tomato-timer.com/#" onclick="permit();" class="small button">Enable Desktop Alerts</a>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="panel">
+									<h5>Settings</h5>
+                  <h6 class="subheader">You can set custom times, audio tone and volume via Settings.</h6>
+									<script async="" type="text/javascript" src="./clear()_files/carbon.js.download" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QMF6YI453JCY7LYKQMCWAI42JYCK7I5Z3JCWBILK3IC6BI42QKC6BIP5QJC6SDEK3EHJNCLSIZ?segment=placement:tomatotimercom;" class="carbon-img" target="_blank" rel="noopener"><img src="./clear()_files/1550855401-cc_light.png" alt="" border="0" height="100" width="130" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QMF6YI453JCY7LYKQMCWAI42JYCK7I5Z3JCWBILK3IC6BI42QKC6BIP5QJC6SDEK3EHJNCLSIZ?segment=placement:tomatotimercom;" class="carbon-text" target="_blank" rel="noopener">Students and Teachers, save up to 60% on Adobe Creative Cloud.</a></span><a href="http://carbonads.net/?utm_source=tomatotimercom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener">ads via Carbon</a></span></div>
+								</div>
+              </div>
+</div>
+
+<script type="text/javascript" src="./clear()_files/notify.js.download"></script>
+<script type="text/javascript" src="./clear()_files/jquery.countdown.js.download"></script>
+<script type="text/javascript" src="./clear()_files/tomato_2.js.download"></script>
+
+<div id="faqModal" class="reveal-modal medium">
+	<div>
+		Q. What is Pomodoro Technique?
+	</div>
+
+	<div>
+		A. The time management technique created by Francesco Cirillo for a	more productive way to work and study. For more information,&nbsp;<a href="http://www.pomodorotechnique.com/" target="_blank">click here</a>.
+	</div>
+
+	<div>
+		<br>
+	</div>
+
+	<div>
+		Q. Can you tell me the story without having to visit the website?
+	</div>
+
+	<div>
+		<div>
+			A. Well, it comprises of the following basic steps:
+		</div>
+
+		<ul>
+			<li>Decide on the task at hand</li>
+			<li>Set the <strong>Pomodoro</strong> (timer) to 25 minutes</li>
+			<li>Work on the task until the timer expires; Record with an X</li>
+			<li>Take a <strong>Short Break</strong> (5 minutes)</li>
+			<li>Every four "<em>pomodoros</em>", take a <strong>Long Break</strong> (10 minutes)</li>
+		</ul>
+	</div>
+
+	<div>
+		Q. What is TomatoTimer?
+	</div>
+
+	<div>
+		A. It's an easy to use, flexible Pomodoro Technique timer. It was inspired by Tomatoi.st and it uses jQuery and HTML5 features like Desktop Notifications, Audio API and Local Storage instead of relying on Adobe Flash and other such technologies.
+	</div>
+
+	<div>
+		<br>
+	</div>
+
+	<div>
+		Q. Why use TomatoTimer?
+	</div>
+
+	<div>
+		A.&nbsp;Here's why:
+			<ul>
+				<li>Clean and Crisp interface with a Mobile friendly layout.</li>
+				<li>Ability to Pause or Reset the timer intervals.</li>
+				<li>Audio notifications at the end of a timer period.</li>
+				<li>Desktop notifications. (Only supported in Google Chrome)</li>
+				<li>Keyboard shortcuts.</li>
+				<li>Ability to change the alert sound + volume via Settings</li>
+				<li>Custom Timer Intervals</li>
+				<li>A history of your activity. (Coming soon.)</li>
+			</ul>
+		<br>
+	</div>
+
+	<div>
+		Q. I've got some feedback. How do I get in touch with you?
+	</div>
+
+	<div>
+		A. <a href="mailto:mpcovcd@gmail.com">Email me</a>.
+	</div>
+
+  <div>
+    <br>
+  </div>
+
+  <div>
+    Receive early access to our new platform and news about feature updates to TomatoTimer! Signup for our mailing list: <a href="http://eepurl.com/c5uCuz"> Sign up!</a>
+  </div>
+<a class="close-reveal-modal">×</a>
+  </div>
+
+<div id="settingsModal" class="reveal-modal medium">
+  <h2>Options</h2>
+  <h3>User preferences</h3>
+  <p class="flex-container flex-center-items">
+    <input id="checkBoxTimerIndication" type="checkbox">
+    <label for="checkBoxTimerIndication">Timer indication in title?</label>
+  </p>
+
+  <p class="flex-container flex-center-items">
+    <input id="checkBoxNotifications" type="checkbox">
+    <label for="checkBoxNotifications">Browser notifications?</label>
+  </p>
+
+  <p class="flex-container flex-center-items">
+    <input id="checkBoxAutoStartSequence" type="checkbox">
+    <label for="checkBoxAutoStartSequence">Auto start pomodoros and breaks?</label>
+  </p>
+
+  <p class="flex-container flex-center-items ">
+    <label for="pomodoro_goal">Pomodoro goal for the day</label>
+    <input class="small-input" type="number" id="pomodoro_goal" step="1" min="1" name="pomodoro_goal">
+  </p>
+
+  <p></p><h3>Select Sound</h3>
+  <select id="alertoption" size="5">
+      <option value="80sAlarm">80s Alarm</option>
+      <option value="alarmclock">Alarm Clock</option>
+      <option value="alarmwatch">Wristwatch Alarm</option>
+      <option value="ding">Elevator Ding</option>
+      <option value="doorbell">Door Bell</option>
+  </select>
+  <br><h3>Select Volume</h3>
+  <select id="volume" size="5">
+      <option value="0">Mute</option>
+      <option value="0.25">25%</option>
+      <option value="0.5">50%</option>
+      <option value="0.75">75%</option>
+      <option value="1.0">100%</option> 
+  </select>
+  <br><h3>Set Custom Times <small>(in minutes)</small></h3>
+  <div class="row">
+    <div class="four columns">
+      <label for="time_pomodoro">Pomodoro</label>
+      <input type="number" id="time_pomodoro" step="1" min="1" name="time_pomodoro">
+    </div>
+    <div class="four columns">
+      <label for="time_shortbreak">Short Break</label>
+      <input type="number" id="time_shortbreak" step="1" min="1" name="time_shortbreak">
+    </div>
+    <div class="four columns">
+      <label for="time_longbreak">Long Break</label>
+      <input type="number" id="time_longbreak" step="1" min="1" name="time_longbreak">
+    </div>
+  </div>
+  <p></p>
+  <input type="button" id="submit" value="Save" class="button" onclick="saveSETTINGS();">
+  <input type="button" id="reset" value="Reset" class="button" onclick="resetSETTINGS();">
+  <input type="button" id="soundtest" value="Sound Test" class="button" onclick="soundTEST();">
+  <br>
+  <a class="close-reveal-modal">×</a>
+</div>
+
+<div id="trackerModal" class="reveal-modal large">
+  <h2>Time log</h2>
+  <div class="flex-container flex-center-items margin-large-bottom ">
+    <div class="margin-small-right">Pomodoro goal tracker:</div>
+    <div id="tracker-goal-pomodoros" class="flex-container"><div class="pom-goal-circle pom-goal-circle-full"></div></div>
+  </div>
+  <div class="margin-large-bottom"><button id="pomodoroGoalClear" class="button" onclick="clearPomodoroGoalTracker();">Clear pomodoro's done today</button></div>
+  <table id="tracker-time-list" style="width:100%"><tbody><tr><th>Session</th><th>Start time</th><th>End time</th><th>Description</th></tr><tr><td>pomodoro</td><td>Sunday, May 26th 2019, 8:45:12 am</td><td>Sunday, May 26th 2019, 9:10:12 am</td><td><input type="text" class="log-description" value="" data-id="22cce459-fa59-4c5c-9a40-93c993c8eaa2"></td></tr><tr><td>long_break</td><td>Sunday, May 26th 2019, 9:10:18 am</td><td>Sunday, May 26th 2019, 9:20:18 am</td><td><input type="text" class="log-description" value="" data-id="97d91973-f3d1-4eda-b31d-7555383569d1"></td></tr><tr><td>short_break</td><td>Sunday, May 26th 2019, 4:57:42 pm</td><td>Sunday, May 26th 2019, 5:02:42 pm</td><td><input type="text" class="log-description" value="" data-id="1c8138f1-6d97-46ad-9592-81b2508b9c65"></td></tr><tr><td>pomodoro</td><td>Sunday, May 26th 2019, 5:10:13 pm</td><td>Sunday, May 26th 2019, 5:35:13 pm</td><td><input type="text" class="log-description" value="" data-id="efdfa480-abfa-4075-9056-4829904fdbea"></td></tr><tr><td>long_break</td><td>Sunday, May 26th 2019, 11:12:14 pm</td><td>Sunday, May 26th 2019, 11:22:11 pm</td><td><input type="text" class="log-description" value="" data-id="c1967e10-2313-4a42-b8f8-d3d6ebf1d518"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 2:17:01 am</td><td>Monday, May 27th 2019, 2:22:01 am</td><td><input type="text" class="log-description" value="" data-id="13f5d232-7ae2-4954-9358-f5a14c866fb7"></td></tr><tr><td>long_break</td><td>Monday, May 27th 2019, 9:14:16 am</td><td>Monday, May 27th 2019, 9:24:16 am</td><td><input type="text" class="log-description" value="" data-id="2697c195-06d9-4241-9fd2-2c2f8edc3c04"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 9:24:21 am</td><td>Monday, May 27th 2019, 9:29:21 am</td><td><input type="text" class="log-description" value="" data-id="54405394-57d0-411b-94ef-d3faae70c8fc"></td></tr><tr><td>long_break</td><td>Monday, May 27th 2019, 9:29:29 am</td><td>Monday, May 27th 2019, 9:39:29 am</td><td><input type="text" class="log-description" value="" data-id="adf6209b-5fa2-4739-a25e-601579611376"></td></tr><tr><td>long_break</td><td>Monday, May 27th 2019, 9:46:09 am</td><td>Monday, May 27th 2019, 9:56:09 am</td><td><input type="text" class="log-description" value="" data-id="9a106e3a-e10d-4be5-97d5-911d47cf30b1"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 10:04:54 am</td><td>Monday, May 27th 2019, 10:09:54 am</td><td><input type="text" class="log-description" value="" data-id="bd8b6eca-8825-46ac-a4eb-71d4ca469079"></td></tr><tr><td>pomodoro</td><td>Monday, May 27th 2019, 10:20:36 am</td><td>Monday, May 27th 2019, 10:45:36 am</td><td><input type="text" class="log-description" value="" data-id="fdb86302-8833-4f61-8fb5-042639acfeaa"></td></tr><tr><td>pomodoro</td><td>Monday, May 27th 2019, 10:48:39 am</td><td>Monday, May 27th 2019, 11:13:39 am</td><td><input type="text" class="log-description" value="" data-id="50f8489d-2094-414a-88e4-1a6ba24c9916"></td></tr><tr><td>pomodoro</td><td>Monday, May 27th 2019, 11:45:38 am</td><td>Monday, May 27th 2019, 12:10:38 pm</td><td><input type="text" class="log-description" value="" data-id="f9c069d1-8221-44d6-b9e2-f14c4c635153"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 12:18:56 pm</td><td>Monday, May 27th 2019, 12:23:56 pm</td><td><input type="text" class="log-description" value="" data-id="6c19ecf7-b983-4d83-a4f2-65cea9a9ff63"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 12:24:13 pm</td><td>Monday, May 27th 2019, 12:29:13 pm</td><td><input type="text" class="log-description" value="" data-id="e6a8cb8e-8f45-40ab-8f38-3ce31ef24356"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 12:29:20 pm</td><td>Monday, May 27th 2019, 12:34:20 pm</td><td><input type="text" class="log-description" value="" data-id="27e74270-6315-4902-8b5d-1616606bdb84"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 12:34:25 pm</td><td>Monday, May 27th 2019, 12:39:25 pm</td><td><input type="text" class="log-description" value="" data-id="2c9185a2-a136-44e5-ad25-649e55f09910"></td></tr><tr><td>long_break</td><td>Monday, May 27th 2019, 3:51:39 pm</td><td>Monday, May 27th 2019, 4:01:39 pm</td><td><input type="text" class="log-description" value="" data-id="739bde62-2656-4042-a7a5-c097bf0591cb"></td></tr><tr><td>pomodoro</td><td>Monday, May 27th 2019, 4:16:52 pm</td><td>Monday, May 27th 2019, 4:41:52 pm</td><td><input type="text" class="log-description" value="" data-id="6e7d997d-ec39-4b80-96a2-856e59c68f9b"></td></tr><tr><td>long_break</td><td>Monday, May 27th 2019, 5:18:30 pm</td><td>Monday, May 27th 2019, 5:28:30 pm</td><td><input type="text" class="log-description" value="" data-id="c8407afc-9169-4c72-88c5-26942fa2418a"></td></tr><tr><td>long_break</td><td>Monday, May 27th 2019, 5:28:34 pm</td><td>Monday, May 27th 2019, 5:38:34 pm</td><td><input type="text" class="log-description" value="" data-id="7614d945-63c9-498b-b63b-deacb342bf72"></td></tr><tr><td>long_break</td><td>Monday, May 27th 2019, 5:38:40 pm</td><td>Monday, May 27th 2019, 5:48:40 pm</td><td><input type="text" class="log-description" value="" data-id="e448056e-399d-44ba-8db7-4c13d12f2bd2"></td></tr><tr><td>short_break</td><td>Monday, May 27th 2019, 9:49:06 pm</td><td>Monday, May 27th 2019, 9:54:06 pm</td><td><input type="text" class="log-description" value="" data-id="300ee64e-809b-4d8e-bea1-6cfb005110a6"></td></tr><tr><td>pomodoro</td><td>Monday, May 27th 2019, 11:00:06 pm</td><td>Monday, May 27th 2019, 11:25:06 pm</td><td><input type="text" class="log-description" value="" data-id="c3b1a2b9-44fa-4c91-a8b7-d3d40d9bbc13"></td></tr><tr><td>pomodoro</td><td>Monday, May 27th 2019, 11:25:10 pm</td><td>Monday, May 27th 2019, 11:50:10 pm</td><td><input type="text" class="log-description" value="" data-id="29574263-1dd2-45e2-973b-3af570a67533"></td></tr><tr><td>long_break</td><td>Tuesday, May 28th 2019, 10:51:51 am</td><td>Tuesday, May 28th 2019, 11:01:51 am</td><td><input type="text" class="log-description" value="" data-id="299e96d9-ece5-45ad-9f1c-6f9e5f94bd67"></td></tr><tr><td>pomodoro</td><td>Tuesday, May 28th 2019, 4:50:08 pm</td><td>Tuesday, May 28th 2019, 4:52:04 pm</td><td><input type="text" class="log-description" value="" data-id="9ff30465-77d2-49b3-aaf4-8c83dd792840"></td></tr><tr><td>short_break</td><td>Tuesday, May 28th 2019, 5:56:58 pm</td><td>Tuesday, May 28th 2019, 6:01:58 pm</td><td><input type="text" class="log-description" value="" data-id="4678ef37-ebd3-43ff-a7f7-63db90a96c91"></td></tr><tr><td>pomodoro</td><td>Tuesday, May 28th 2019, 6:28:53 pm</td><td>Tuesday, May 28th 2019, 6:53:53 pm</td><td><input type="text" class="log-description" value="" data-id="edf630e8-a6eb-4f0b-bcfc-1cbb1b421405"></td></tr><tr><td>pomodoro</td><td>Tuesday, May 28th 2019, 7:10:29 pm</td><td>Tuesday, May 28th 2019, 7:35:29 pm</td><td><input type="text" class="log-description" value="" data-id="9f0f5f5e-656f-435a-bfdb-182695803fad"></td></tr><tr><td>pomodoro</td><td>Tuesday, May 28th 2019, 11:10:30 pm</td><td>Tuesday, May 28th 2019, 11:35:30 pm</td><td><input type="text" class="log-description" value="" data-id="55652dda-ec23-4931-964b-8264d3cc5491"></td></tr><tr><td>short_break</td><td>Tuesday, May 28th 2019, 11:35:30 pm</td><td>Tuesday, May 28th 2019, 11:40:30 pm</td><td><input type="text" class="log-description" value="" data-id="793ef34b-3b88-457a-9ee7-ca92c25d903c"></td></tr><tr><td>pomodoro</td><td>Tuesday, May 28th 2019, 11:56:19 pm</td><td>Wednesday, May 29th 2019, 12:21:19 am</td><td><input type="text" class="log-description" value="" data-id="039e4519-db3a-4e5f-aeb2-0d0a88cf2bcc"></td></tr><tr><td>short_break</td><td>Wednesday, May 29th 2019, 12:21:19 am</td><td>Wednesday, May 29th 2019, 12:26:19 am</td><td><input type="text" class="log-description" value="" data-id="c935dd64-e19c-42f8-9ec7-2dab1c4f21d7"></td></tr><tr><td>pomodoro</td><td>Wednesday, May 29th 2019, 12:26:19 am</td><td>Wednesday, May 29th 2019, 12:51:20 am</td><td><input type="text" class="log-description" value="" data-id="a136beb5-ce85-43f5-959c-0ead78fb0557"></td></tr><tr><td>short_break</td><td>Wednesday, May 29th 2019, 12:51:20 am</td><td>Wednesday, May 29th 2019, 12:56:20 am</td><td><input type="text" class="log-description" value="" data-id="5c0167a3-c645-4ffa-a6b5-7cc8396d0075"></td></tr><tr><td>pomodoro</td><td>Wednesday, May 29th 2019, 12:56:20 am</td><td>Wednesday, May 29th 2019, 1:21:20 am</td><td><input type="text" class="log-description" value="" data-id="d71b03ab-889a-4b3e-b69c-07c62e6fc4c4"></td></tr><tr><td>pomodoro</td><td>Wednesday, May 29th 2019, 11:14:09 am</td><td>Wednesday, May 29th 2019, 11:39:10 am</td><td><input type="text" class="log-description" value="" data-id="acb7ca1b-cdc4-4f93-905c-d6eb8c021751"></td></tr><tr><td>short_break</td><td>Wednesday, May 29th 2019, 11:39:10 am</td><td>Wednesday, May 29th 2019, 11:44:10 am</td><td><input type="text" class="log-description" value="" data-id="63b2f278-a873-4e13-a720-786524055323"></td></tr><tr><td>pomodoro</td><td>Wednesday, May 29th 2019, 12:02:54 pm</td><td>Wednesday, May 29th 2019, 12:27:51 pm</td><td><input type="text" class="log-description" value="" data-id="f2cd4056-9d1d-430e-ae5d-78892e979c2c"></td></tr></tbody></table>
+
+  <div class="margin-large-bottom"><button id="pomodoroTimerClear" class="button" onclick="clearPomodoroLog();">Clear timer log</button></div>
+
+  <a class="close-reveal-modal">×</a>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18513817-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+function saveSETTINGS() {
+  var snd = $('#alertoption').val();
+  var vol = $('#volume').val();
+  var pomodoro = $("#time_pomodoro").val();
+  var shortbreak = $("#time_shortbreak").val();
+  var longbreak = $("#time_longbreak").val();
+
+  if (!isInteger(pomodoro) || !isInteger(shortbreak) || !isInteger(longbreak))
+    alert('Please use positive integers for all timers');
+  else {
+    localStorage.setItem("alertoption", snd);
+    localStorage.setItem("volumeoption", vol);
+    localStorage.setItem("pomodoro", parseInt(pomodoro));
+    localStorage.setItem("shortbreak", parseInt(shortbreak));
+    localStorage.setItem("longbreak", parseInt(longbreak));
+
+    updateTimers();
+
+    $('#settingsModal .close-reveal-modal')[0].click();
+  }
+}
+
+function resetSETTINGS() {
+    $("#alertoption").val("alarmwatch");
+    $("#volume").val(0.5);
+    $("#time_pomodoro").val(25);
+    $("#time_shortbreak").val(5);
+    $("#time_longbreak").val(10);
+}
+
+function soundTEST() {
+    buzzer(true);
+}
+
+function isInteger(num) {
+  return num && Math.floor(num) == num && $.isNumeric(num) && num > 0;
+}
+</script>
+
+
+</div></body></html>

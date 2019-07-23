@@ -1,0 +1,53 @@
+I/ Color
+
+/* 2 file:
+  - 1 part_one
+  -1 part_one_master
+*html:
+  <link rel="" href="#">
+  - rel= relationship href : link
+
+*CSS:
+  - Comment by /* Comment */ or shortkey ctrl + /
+
+  /* selected tag {
+    prperty: Value;}
+    */
+
+h1{
+color: blue;
+}
+- Keep inmind that CSS require semi-colon (;) at the end of code defining 
+how you want your content  to appear.
+- Change color of Heading 1 ok
+- Change color or list item to a rgb ok
+ color by gooogle color picker 
+ -change color by hex code 
+ -change color by rgba.
+ a>> alpha mean transparenting (Similar to blur) .
+
+II/ Border, background, div and span
+
+- Simmilar to pick color for in the previous "I/ Color"
+- New property name: 
+	+background: (Can use color or picture or even url of pecture with
+"url(link) ) - This link can be an image in the same directory or an imagge
+with online url. Differ from HTML, file path to image in PC cannot be use here ?
+	+backgroup_repeat:
+	+backGround:
+	+border-color:
+	+border-width:
+	+bordoer-style:
+- Practice: Create a file which have a block inside different from the whole page. Inside the block have one more block that is different from the block. 
+Back ground is a picture from a url
+
+III/ Apply to specific element:
+
+	-To a group of element: .class_name - apply to all element with class 
+of class_name.
+	-To a single element: #id_name- apply to element with id of id_name.
+	-3 usefull way:
+		+h3 + li {}
+		+li a{}
+		+li a[href="#"] {}
+

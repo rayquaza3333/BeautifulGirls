@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to relative_url_template_tags</h1>
+      <a href="{% url 'app_URL:other' %}">other</a>
+      <p></p>
+      <a href="{% url 'index' %}">Home page</a>
+      <p></p>
+      <a href="{% url 'admin:index' %}">Admin</a>
+      <p></p>
+      <a href="{% url 'app_URL:base' %}">Base</a>
+      <p></p>
+      {{ text|upper }}
+      <p></p>
+      {{ number|add:'100'}}
+      {% block block_test %}
+      <p>OK</p>
+      {% endblock %}
+  </body>
+</html>

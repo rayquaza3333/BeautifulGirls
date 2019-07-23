@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <link rel="stylesheet" href="{% static 'css/my_css.css' %}">
+  </head>
+  <body>
+    <h1>This is a template</h1>
+    {{insert_me}}
+    <p></p>
+    <h2>This is access record data</h2>
+
+    <div class="access_data">
+      {% if access_list %}
+
+      <table>
+        <thead>
+          <th>Access Date</th>
+          <th>Site Name</th>
+        </thead>
+          {% for acc in access_list %}
+          <tr>
+            <td>{{acc.date}}</td>
+            <td>{{acc.name}}</td>
+          </tr>
+          {% endfor %}
+
+        {% endif %}
+
+      </table>
+
+    </div>
+
+
+    <p></p>
+    <img src="{% static 'images/sqlparse.png' %}" alt="">
+  </body>
+</html>

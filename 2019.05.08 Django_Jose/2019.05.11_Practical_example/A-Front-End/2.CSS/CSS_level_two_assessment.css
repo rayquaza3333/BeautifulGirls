@@ -1,0 +1,41 @@
+h1{
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+}
+table{
+  alignment: center;
+  margin:auto;
+}
+#a1{
+  background: #247BA0;
+  height: 400px;
+  width: 200px;
+  border: 10px solid white;
+}
+#a2{
+  background: #70C1B3;
+  height: 400px;
+  width: 200px;
+  border: 10px solid white;
+}
+
+#a3{
+  background: #B2DBBF;
+  height: 400px;
+  width: 200px;
+  border: 10px solid white;
+}
+
+#a4{
+  background: #F3FFBD;
+  height: 400px;
+  width: 200px;
+  border: 10px solid white;
+}
+
+#a5{
+  background: #FF1654;
+  height: 400px;
+  width: 200px;
+  border: 10px solid white;
+}
