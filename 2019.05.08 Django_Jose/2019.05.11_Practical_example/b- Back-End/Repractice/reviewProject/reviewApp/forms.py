@@ -1,5 +1,5 @@
 from django import forms
-from models import UserProfileInformationForm
+from reviewApp.models import UserProfileInformation
 from django.contrib.auth.models import User
 
 class UserForm(forms.ModelForm):
@@ -10,5 +10,5 @@ class UserForm(forms.ModelForm):
 class UserProfileInformationForm(forms.ModelForm):
 
     class Meta():
-        model = UserProfileInformationForm
+        model = UserProfileInformation
         fields = ('portfolio_site', 'profile_pic')

@@ -16,8 +16,14 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
-from django.urls import
+from django.urls import path
+from reviewApp import views
+
+app_name = "reviewApp"
 
 urlpatterns = [
+    url(r'^login/', views.user_login, name = "user_login"),
+    url(r'^logout/', views.user_logout, name ='user_logout'),
+    url(r'^register/', views.register, name = "register"),
     path('admin/', admin.site.urls),
 ]
