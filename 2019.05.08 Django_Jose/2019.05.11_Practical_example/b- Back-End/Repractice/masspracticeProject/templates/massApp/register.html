@@ -1,0 +1,29 @@
+{% extends 'massApp/base.html' %}
+
+{% block block_title %}
+<title>Register</title>
+{% endblock %}
+{% block body_block %}
+<div class="container">
+<div class="jumbotron">
+
+  <h1>Registration</h1>
+  {% if not registered %}
+
+  <h3>PLease fill out the form</h3>
+  <form  method="post" enctype = "multipart/form-data">
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    {{ profile_form.as_p }}
+
+    <input type="submit" name="" value="Register">
+
+  </form>
+
+  {% else %}
+  <h1>Thanks for registering</h1>
+  {% endif %}
+</div>
+</div>
+
+{% endblock %}
